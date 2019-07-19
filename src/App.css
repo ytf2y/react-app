@@ -1,33 +1,115 @@
-.App {
-  text-align: center;
+html,body,#root,.App{
+  height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.login-page{
+  padding: 100px 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  background: url("./static/images/login-bg.png") no-repeat;
+  background-size: cover;
+}
+.login-page .left{
+  color: white;
+}
+.login-page .left .title{
+  font-size: 100px;
+  margin-bottom: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-page .right{
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  color: #666666;
+  padding: 50px;
+}
+.login-page .right form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.login-page .right .iconlogo{
+  font-size: 100px;
+}
+.login-page .right .row{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.login-page .right .row input{
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.login-page .right .row button{
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #7b1ad9;
   color: white;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+}
+.login-page .right .row button:active{
+  opacity: 0.8;
+}
+.login-page .right .row .checkcode{
+  position: absolute;
+  right: 20px;
+  top: -5px;
+  width: 100px;
+  height: 40px;
+  background-color: #fafafa;
+  text-align: center;
+  line-height: 40px;
+  color: hotpink;
+  cursor: default;
 }
 
-.App-link {
-  color: #61dafb;
+.home-page{
+  height: 100%;
+}
+.home-page .ant-menu.ant-menu-dark{
+  height: 100%;
+  position: absolute;
+}
+.home-page .ant-menu .user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+.home-page .ant-menu .user img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.home-page .content{
+  padding: 20px;
+  margin-left: 256px;
+}
+.home-page .content .row{
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-table {
+  width: 100%;
 }
+.ant-spin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
